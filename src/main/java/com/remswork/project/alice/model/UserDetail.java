@@ -1,15 +1,10 @@
 package com.remswork.project.alice.model;
 
-import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-@Entity
-@Table(name="tbluserdetail")
 public class UserDetail {
 
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    @Id
     private long id;
     private String username;
     private String password;
