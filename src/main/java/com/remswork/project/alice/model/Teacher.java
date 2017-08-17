@@ -16,7 +16,7 @@ public class Teacher {
 	
 	public Teacher() {
 		super();
-		links = new ArrayList<>();
+		links = new ArrayList<Link>();
 	}
 	
 	public Teacher(String firstName, String lastName, String middleName, String email) {

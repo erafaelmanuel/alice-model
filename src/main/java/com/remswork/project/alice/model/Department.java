@@ -12,7 +12,7 @@ public class Department {
 	
 	public Department() {
 		super();
-		links = new ArrayList<>();
+		links = new ArrayList<Link>();
 	}
 	
 	public Department(String name, String description) {
