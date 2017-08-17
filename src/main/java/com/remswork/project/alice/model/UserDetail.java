@@ -1,13 +1,15 @@
 package com.remswork.project.alice.model;
 
 public class UserDetail {
-
+	
     private long id;
     private String username;
     private String password;
     private String userType;
     private boolean isEnabled;
     private String registered;
+    public static final String USER = "User/Client";
+    public static final String ADMIN = "Admin";
 
     public UserDetail() {
         super();
@@ -74,4 +76,5 @@ public class UserDetail {
     public void setRegistered(String registered) {
         this.registered = registered;
     }
+
 }

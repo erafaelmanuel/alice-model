@@ -1,13 +1,18 @@
 package com.remswork.project.alice.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Department {
 
 	private long id;
 	private String name;
 	private String description;
+	private List<Link> links;
 	
 	public Department() {
 		super();
+		links = new ArrayList<>();
 	}
 	
 	public Department(String name, String description) {
@@ -40,7 +45,19 @@ public class Department {
 	public String getDescription() {
 		return description;
 	}
-	
+
+	public List<Link> getLinks() {
+		return links;
+	}
+
+	public void setLinks(List<Link> links) {
+		this.links = links;
+	}
+
+	public void addLink(Link link){
+		links.add(link);
+	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
